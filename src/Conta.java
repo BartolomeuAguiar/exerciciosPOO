@@ -1,10 +1,54 @@
 
 public class Conta {
-	String titular;
-	int numero;
-	String agencia;
-	double saldo;
-	Data dataDeAbertura;
+	private String titular;
+	private int numero;
+	private String agencia;
+	private double saldo;
+	private Data dataDeAbertura;
+	public static int identificador = 0;
+
+	public Conta() {
+		identificador++;
+		System.out.println("Conta criada com sucesso");
+	}
+
+	public Conta(String titular) {
+		this.titular = titular;
+		identificador++;
+		System.out.println("Conta criada com sucesso");
+	}
+
+	public String getTitular() {
+		return titular;
+	}
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+
+	public Data getDataDeAbertura() {
+		return dataDeAbertura;
+	}
+
+	public void setDataDeAbertura(Data dataDeAbertura) {
+		this.dataDeAbertura = dataDeAbertura;
+	}
 
 	public double getSaldo() {
 		return saldo;
