@@ -5,6 +5,7 @@ public class Pais {
 	private String idioma;
 	private String estado;
 	private String moeda;
+	private String presidente;
 	
 	
 	
