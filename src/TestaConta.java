@@ -18,6 +18,12 @@ public class TestaConta {
 
 		Conta c3 = new Conta("Artur");
 		c3 = c2;
+		
+		Gerente g1 = new Gerente();
+		g1.setNome("Augusto");
+		
+		System.out.println(g1.getNome());
+		
 		// nesse caso os objetos são dados como iguais.
 
 		c1.deposita(100);
